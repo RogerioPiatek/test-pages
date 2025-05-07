@@ -1,0 +1,152 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Mim</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.cabecalho {
+  background: #4a90e2;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.titulo-principal {
+  font-size: 2.5rem;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.sobre-mim {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.foto-perfil img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.descricao {
+  max-width: 600px;
+}
+
+.descricao h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.descricao p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.competencias {
+  padding: 2rem 1rem;
+  background: #fff;
+  flex-grow: 1;
+}
+
+.competencias h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.lista-competencias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.item-competencia {
+  background: #e1eaff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+.rodape {
+  text-align: center;
+  padding: 1rem;
+  background: #4a90e2;
+  color: #fff;
+  margin-top: auto;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container-principal">
+    <header class="cabecalho">
+      <h1 class="titulo-principal">Olá, eu sou João Silva</h1>
+      <p class="subtitulo">Desenvolvedor Front-end & Entusiasta de UX/UI</p>
+    </header>
+
+    <section class="sobre-mim">
+      <div class="foto-perfil">
+        <img src="noiva.png" alt="Foto de perfil de João Silva" />
+      </div>
+      <div class="descricao">
+        <h2>Sobre Mim</h2>
+        <p>
+          Tenho 28 anos e atuo há 5 anos como desenvolvedor front-end. Sou apaixonado
+          por criar interfaces responsivas e intuitivas, sempre focando na melhor
+          experiência para o usuário.
+        </p>
+        <p>
+          No meu tempo livre, gosto de estudar novas tendências de design, praticar
+          esportes e tocar violão.
+        </p>
+      </div>
+    </section>
+
+    <section class="competencias">
+      <h2>Competências</h2>
+      <div class="lista-competencias">
+        <div class="item-competencia">HTML5</div>
+        <div class="item-competencia">CSS3</div>
+        <div class="item-competencia">JavaScript</div>
+        <div class="item-competencia">React</div>
+        <div class="item-competencia">Figma</div>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <p>© 2025 João Silva. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
